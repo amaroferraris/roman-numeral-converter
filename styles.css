@@ -1,0 +1,112 @@
+:root {
+    --alert: rgba(255, 0, 0, 0.75);
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    min-height: 100vh;
+    padding: 50px 20px;
+    background-color: rgb(110, 110, 110);
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: rgb(20, 20, 20);
+    text-align: center;
+    margin: 20px auto;
+    max-width: 350px;
+}
+
+
+form {
+    background-color: rgb(100, 100, 100);
+    margin: auto 25px;
+    padding: 15px auto;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    border: 3px solid black;
+}
+
+fieldset {
+    border: 0 none;
+    height: 100%;
+    padding: 25px;
+    margin: 10px 20px;
+}
+
+label {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    font-size: 2.5rem;
+    width: 100%;
+    height: 60px;
+    padding: 6px 12px;
+    margin: 10px 0;
+    line-height: 1.4;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    height: 4rem;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 15px;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    padding: 10px 16px;
+    font-size: 23px;
+    width: auto;
+}
+
+.output {
+    font-size: 1.8rem;
+    font-weight: 400;
+    background-color: rgb(100, 100, 100);
+    border: 1px solid black;
+    width: 90%;
+    max-width: 500px;
+    min-height: 55px;
+    margin-top: 25px;
+    padding: 15px;
+    overflow-wrap: break-word;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.alert {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    background-color: var(--alert);
+  }
+
+
+.hidden {
+    display: none;
+}
